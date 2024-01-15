@@ -1,28 +1,22 @@
-import react from '@vitejs/plugin-react-swc';
-import path from 'path';
-import { defineConfig } from 'vite';
+import { defineConfig } from "vite";
+import paths from "vite-tsconfig-paths";
+
+import react from "@vitejs/plugin-react-swc";
 
 export default defineConfig({
-  // base: '/vite',
-  plugins: [react()],
-  resolve: {
-    alias: [
-      {
-        find: '~',
-        replacement: path.resolve(__dirname, './src/'),
-      },
-      {
-        find: 'assets',
-        replacement: path.resolve(__dirname, './src/assets/'),
-      },
-      {
-        find: 'styles',
-        replacement: path.resolve(__dirname, './src/styles/'),
-      },
-      {
-        find: 'pages',
-        replacement: path.resolve(__dirname, './src/pages/'),
-      },
-    ],
+  root: './src',
+  publicDir: '../public',
+  base: './',
+  build: {
+    outDir: '../dist',
+    emptyOutDir: true
   },
+  server: {
+    host: '0.0.0.0',
+    port: 3000
+  },
+  plugins: [
+    react({ plugins: [] }),
+    paths({ root: '../' })
+  ],
 });

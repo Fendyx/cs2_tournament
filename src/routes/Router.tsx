@@ -1,8 +1,8 @@
-import { lazy } from 'react';
-import { createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom';
+import ErrorPage from "pages/Error";
+import { lazy } from "react";
+import { createBrowserRouter, createRoutesFromElements, Route } from "react-router-dom";
 
-import { ROUTES } from './route-names';
-import ErrorPage from 'pages/Error';
+import { ROUTES } from "./route-names";
 
 const Home = lazy(() => import('pages/Home'));
 const About = lazy(() => import('~/pages/About'));

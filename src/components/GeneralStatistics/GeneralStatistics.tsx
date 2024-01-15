@@ -1,4 +1,4 @@
-import styles from './GeneralStatistics.module.scss';
+import styles from "./GeneralStatistics.module.scss";
 
 export const GeneralStatistics = () => {
   return (
@@ -25,24 +25,24 @@ export const GeneralStatistics = () => {
       <div>
         <span>SECURITY</span>
         <span>1</span>
-        <span>0</span>
+        <span>1</span>
         <span>0</span>
       </div>
       <div>
         <span>My little pony team</span>
         <span>0</span>
-        <span>1</span>
+        <span>2</span>
         <span>0</span>
       </div>
       <div>
         <span>Унга Бунга</span>
-        <span>1</span>
+        <span>2</span>
         <span>0</span>
         <span>0</span>
       </div>
       <div>
         <span>Квасоля і Картопля</span>
-        <span>1</span>
+        <span>2</span>
         <span>0</span>
         <span>0</span>
       </div>

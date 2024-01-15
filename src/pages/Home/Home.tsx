@@ -1,29 +1,33 @@
-import { useState } from 'react';
+import { useState } from "react";
 
-import { GeneralStatistics } from '~/components/GeneralStatistics';
-import { Group } from '~/components/Group';
-import { Header } from '~/components/Header';
-import { InfoGroup } from '~/components/InfoGroup';
-import { TimeOfMaches } from '~/components/TimeOfMaches';
-import { TViewMode } from './types';
-import Img from '~/assets/img/twitch_icon_146123.png';
+import { GeneralStatistics } from "~/components/GeneralStatistics";
+import { Group } from "~/components/Group";
+import { Header } from "~/components/Header";
+import { InfoGroup } from "~/components/InfoGroup";
+import { TimeOfMaches } from "~/components/TimeOfMaches";
+import { TViewMode } from "./types";
+import Img from "~/assets/img/twitch_icon_146123.png";
 
-import styles from './Home.module.scss';
+import styles from "./Home.module.scss";
 
 export const Home = () => {
-  const [viewMode, setViewMode] = useState<TViewMode>('tournament grid');
+  const [viewMode, setViewMode] = useState<TViewMode>("tournament grid");
 
   const changeViewMode = (view: TViewMode) => {
     setViewMode(view);
   };
 
-  if (viewMode === 'tournament grid') {
+  if (viewMode === "tournament grid") {
     return (
       <div>
         <Header />
-        <div className={styles['image-twich']}>
+        <div className={styles["image-twich"]}>
           <span>Twitch:</span>
-          <a href="https://www.twitch.tv/bigtournaments" rel="noreferrer" target="_blank">
+          <a
+            href="https://www.twitch.tv/bigtournaments"
+            rel="noreferrer"
+            target="_blank"
+          >
             <img src={Img} />
           </a>
         </div>
@@ -35,6 +39,7 @@ export const Home = () => {
             teamName3="SECURITY"
             winer1="Унга Бунга"
             winer2="SECURITY"
+            winer3="Унга Бунга"
           />
           <Group
             groupName="2 група"
@@ -43,10 +48,13 @@ export const Home = () => {
             teamName3="My liitle pony team"
             winer1_1="Квасоля і Картопля"
             winer2_2="CHERCAGO"
+            winer3_3="Квасоля і Картопля"
           />
           <GeneralStatistics />
         </div>
-        <button onClick={() => changeViewMode('statistics')}>Переглянути статистику матчів</button>
+        <button onClick={() => changeViewMode("statistics")}>
+          Переглянути статистику матчів
+        </button>
         <TimeOfMaches
           date="12.01.2024"
           state="Done"
@@ -59,7 +67,12 @@ export const Home = () => {
           team="Квасоля і Картопля - CHERCAGO"
           time="16:00"
         />
-        <TimeOfMaches date="13.01.2024" state="Done" team="Fastick team - SECURITY" time="17:30" />
+        <TimeOfMaches
+          date="13.01.2024"
+          state="Done"
+          team="Fastick team - SECURITY"
+          time="17:30"
+        />
         <TimeOfMaches
           date="13.01.2024"
           state="Done"
@@ -68,13 +81,13 @@ export const Home = () => {
         />
         <TimeOfMaches
           date="14.01.2024"
-          state="Waiting..."
+          state="Done"
           team="Квасоля і Картопля - My little pony team"
           time="18:00"
         />
         <TimeOfMaches
           date="14.01.2024"
-          state="Waiting..."
+          state="Done"
           team="Унга Бунга - SECURITY"
           time="21:00"
         />
@@ -85,9 +98,13 @@ export const Home = () => {
   return (
     <div>
       <Header />
-      <div className={styles['image-twich']}>
+      <div className={styles["image-twich"]}>
         <span>Twitch:</span>
-        <a href="https://www.twitch.tv/bigtournaments" rel="noreferrer" target="_blank">
+        <a
+          href="https://www.twitch.tv/bigtournaments"
+          rel="noreferrer"
+          target="_blank"
+        >
           <img src={Img} />
         </a>
       </div>
@@ -102,7 +119,7 @@ export const Home = () => {
           res2="0:3"
           team3="SECURITY - Унга Бунга"
           // match3="0:0"
-          res3="0:0"
+          res3="0:3"
         />
         <InfoGroup
           groupName="2 група"
@@ -114,19 +131,31 @@ export const Home = () => {
           res2="3:0"
           team3="My little pony team - Квасоля і Картопля"
           // match3="0:0"
-          res3="0:0"
+          res3="0:3"
         />
         <GeneralStatistics />
       </div>
-      <button onClick={() => changeViewMode('tournament grid')}>Переглянути турнірну сітку</button>
-      <TimeOfMaches date="12.01.2024" state="Done" team="Унга Бунга - Fastick team" time="22:00" />
+      <button onClick={() => changeViewMode("tournament grid")}>
+        Переглянути турнірну сітку
+      </button>
+      <TimeOfMaches
+        date="12.01.2024"
+        state="Done"
+        team="Унга Бунга - Fastick team"
+        time="22:00"
+      />
       <TimeOfMaches
         date="13.01.2024"
         state="Done"
         team="Квасоля і Картопля - CHERCAGO"
         time="16:00"
       />
-      <TimeOfMaches date="13.01.2024" state="Done" team="Fastick team - SECURITY" time="17:30" />
+      <TimeOfMaches
+        date="13.01.2024"
+        state="Done"
+        team="Fastick team - SECURITY"
+        time="17:30"
+      />
       <TimeOfMaches
         date="13.01.2024"
         state="Done"
@@ -135,13 +164,13 @@ export const Home = () => {
       />
       <TimeOfMaches
         date="14.01.2024"
-        state="Waiting..."
+        state="Done"
         team="Квасоля і Картопля - My little pony team"
         time="18:00"
       />
       <TimeOfMaches
         date="14.01.2024"
-        state="Waiting..."
+        state="Done"
         team="Унга Бунга - SECURITY"
         time="21:00"
       />

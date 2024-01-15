@@ -1,6 +1,6 @@
-import { Props } from './types';
+import { Props } from "./types";
 
-import styles from './Group.module.scss';
+import styles from "./Group.module.scss";
 
 export const Group = ({
   groupName,
@@ -11,18 +11,20 @@ export const Group = ({
   winer1_1,
   winer2,
   winer2_2,
+  winer3,
+  winer3_3,
 }: Props) => {
   return (
     <div className={styles.group}>
       <p>{groupName}</p>
-      <div className={styles['left-names_group-setka']}>
-        <div className={styles['left-names']}>
+      <div className={styles["left-names_group-setka"]}>
+        <div className={styles["left-names"]}>
           <span>{teamName1}</span>
           <span>{teamName2}</span>
           <span>{teamName3}</span>
         </div>
 
-        <div className={styles['group-setka']}>
+        <div className={styles["group-setka"]}>
           <ul>
             <li></li>
             <li></li>
@@ -40,14 +42,17 @@ export const Group = ({
             <li></li>
           </ul>
           <ul>
-            <li></li>
+            <li>
+              {winer3}
+              {winer3_3}
+            </li>
             <li></li>
             <li></li>
           </ul>
         </div>
       </div>
 
-      <div className={styles['bottom-names']}>
+      <div className={styles["bottom-names"]}>
         <span>{teamName1}</span>
         <span>{teamName2}</span>
         <span>{teamName3}</span>

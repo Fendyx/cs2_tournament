@@ -7,4 +7,6 @@ export type Props = {
   winer1_1?: string;
   winer2?: string;
   winer2_2?: string;
+  winer3?: string;
+  winer3_3?: string;
 };

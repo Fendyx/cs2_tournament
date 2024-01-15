@@ -1,2 +1,2 @@
-export { ROUTES } from './route-names';
-export { router } from './Router';
+export * from './route-names';
+export * from './Router';

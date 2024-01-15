@@ -1,0 +1,1 @@
+import{j as r}from"./index-d3384ce6.js";import{H as s}from"./Header-f3ea2807.js";const o=()=>r.jsxs("div",{children:[r.jsx(s,{}),r.jsx("h1",{children:"Ті хто роблять..."}),r.jsx("p",{children:"Ця сторінка ще не створена"})]});export{o as About,o as default};

@@ -1,0 +1,27 @@
+$durations: (
+  'slow': (
+    500ms,
+  ),
+  'normal': (
+    250ms,
+  ),
+  'fast': (
+    125ms,
+  ),
+);
+
+@mixin transition($transition-property: all, $duration: 'normal', $transition-timing-function: ease-in-out) {
+  $transition-duration: map-get($durations, $duration);
+
+  @if $transition-duration {
+    transition-property: $transition-property;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+  } @else {
+    transition-property: $transition-property;
+    transition-duration: map-get($durations, 'normal');
+    transition-timing-function: $transition-timing-function;
+
+    @error 'Unknown transition-duration #{$duration}.';
+  }
+}

@@ -1,0 +1,33 @@
+.image-twich {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 1.4rem;
+  align-items: center;
+}
+
+.image-twich img {
+  margin-left: 20px;
+  margin-right: 30px;
+  transition: 1.2s;
+}
+.image-twich img:hover {
+  transform: scale(1.2);
+  cursor: grab;
+}
+.groupComponentDiv {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.infoGroupComponentDiv {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

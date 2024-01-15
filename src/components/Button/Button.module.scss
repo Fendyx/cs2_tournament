@@ -1,0 +1,29 @@
+@import 'styles/colors';
+@import 'styles/fonts';
+@import 'styles/other';
+
+.wrapper {
+  @include font(500);
+
+  background-color: $color-accent;
+  color: $white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+
+  &.small {
+    height: $height-small;
+  }
+
+  &.medium {
+    height: $height-medium;
+  }
+
+  &.large {
+    height: $height-large;
+  }
+}

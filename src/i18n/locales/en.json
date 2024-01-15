@@ -1,0 +1,10 @@
+{
+  "home_hello_title": "Hello! It's an Axolotl project!",
+  "home_where_to_go_next_header": "Choose where to go next",
+  "home_change_language": "Change language",
+  "page_dictionary": "Dictionary",
+  "dictionary_upload_file_section_title": "Upload a words list file",
+  "dictionary_upload_file_label": "Select a file",
+  "dictionary_no_file_label": "No file selected",
+  "dictionary_read_file_button": "Read the file"
+}

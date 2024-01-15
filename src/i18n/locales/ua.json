@@ -1,0 +1,10 @@
+{
+  "home_hello_title": "Привіт! Це проєкт Axolotl!",
+  "home_where_to_go_next_header": "Обери куди хочеш перейти",
+  "home_change_language": "Змінити мову",
+  "page_dictionary": "Словник",
+  "dictionary_upload_file_section_title": "Завантажити файл зі словами",
+  "dictionary_upload_file_label": "Вибрати файл",
+  "dictionary_no_file_label": "Файл не вибрано",
+  "dictionary_read_file_button": "Зчитати файл"
+}

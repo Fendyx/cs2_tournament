@@ -1,0 +1,78 @@
+.place{
+    margin-top: 50px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+    border: 2px solid black;
+}
+
+.prizes-sponsor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 80%;
+    background-color: rgb(0, 123, 255);
+    color: yellow;
+    height: 150px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.prizes-sponsor:hover{
+    cursor:grab;
+    background-color: rgb(113, 1, 217);
+}
+
+.players-prize{
+    display: flex;
+    width: 80%;
+    height: 400px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.player {
+    width: 200px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.player img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.whichPlace {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.steam-img{
+    width: 60px;
+    height: auto;
+}
+
+.prize{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #3E8FA0;
+}
